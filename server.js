@@ -26,3 +26,32 @@
 //     console.log("server is running successfully");
 // }))
 
+// var age=21
+// if(age>18){
+//     console.log("eligible for vote");
+// }else{
+//     console.log("not eligible for vote");
+// }
+// (age>18)?console.log("eligible for vote"):console.log("not eligible for vote");
+
+const fetchData=async()=>{
+    return await fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((res)=>{
+        return res.json();
+    })
+    .catch((err)=>{
+        return err;
+    })
+}
+     
+  
+
+
+//async await
+const getData=async()=>{
+  var data= await fetchData();
+  console.log(data)
+}
+
+getData();
+
