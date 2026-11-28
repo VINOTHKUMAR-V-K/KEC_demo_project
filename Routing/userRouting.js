@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
-let {registerUser}=require("../Controller/userController")
+let {registerUser,Login}=require("../Controller/userController")
 router.post("/register",registerUser)
+router.post("/login",Login)
+
 
 module.exports=router

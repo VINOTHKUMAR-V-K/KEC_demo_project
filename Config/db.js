@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 const connectDB = async () => {
   await mongoose
-    .connect("mongodb://localhost:27017/KEC_DB")
+    .connect(process.env.MONGO_URL)
     .then(() => {
       console.log("Database connected successfully");
     })
