@@ -1,5 +1,6 @@
 let express=require('express');
 var userRoute=require("./Routing/userRouting")
+var productRoute=require("./Routing/productRouter")
 let database=require('./Config/db');
 var env=require("dotenv")
 var port =5000;
@@ -9,6 +10,7 @@ server.use(express.json());
 database();
 
 server.use("/auth",userRoute);
+server.use("/product",productRoute);
 
 server.listen(port,()=>{
     console.log("server is a running successfully");
