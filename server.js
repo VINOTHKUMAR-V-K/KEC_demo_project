@@ -52,23 +52,36 @@
 
 // getData();
 //array methods
-var arr=[45,78,24,78,54,91,11,22,54,33];
-console.log(arr);
-//1. map
-arr.map((ele)=>{
-    console.log(ele);
-})
-//2. slice
-var data = arr.slice(0,6);
-console.log(data);
-//3. filter
-var filterData=arr.filter((ele)=>{
-    return ele%2!=0;
-})
-console.log(filterData);
-//4.find
-var findData=arr.find((ele)=>{
-    return ele%2!=0;
-})
-console.log(findData)
+// var arr=[45,78,24,78,54,91,11,22,54,33];
+// console.log(arr);
+// //1. map
+// arr.map((ele)=>{
+//     console.log(ele);
+// })
+// //2. slice
+// var data = arr.slice(0,6);
+// console.log(data);
+// //3. filter
+// var filterData=arr.filter((ele)=>{
+//     return ele%2!=0;
+// })
+// console.log(filterData);
+// //4.find
+// var findData=arr.find((ele)=>{
+//     return ele%2!=0;
+// })
+// console.log(findData)
 
+
+// const fetchApi=async()=>{
+//    try{
+//     let res=await fetch("https://dummyjson.com/products");
+//     let data=await res.json();
+//     data.products.slice(0,10).map((ele,index)=>{
+//         console.log(`${index+1}. product-Title:${ele.title} product-Price:${ele.price}\n`);
+//     })
+//    }catch{
+//      console.log("error occured while fetching data");
+//    }
+// }
+// fetchApi();
